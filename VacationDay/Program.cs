@@ -18,12 +18,13 @@ class Program
                 ["Павлов Павел Павлович"] = new List<DateTime>(),
                 ["Георгиев Георг Георгиевич"] = new List<DateTime>()
             };
+            //List<DateTime> list = new List<DateTime>(); 
             foreach (var employee in VacationDictionary)
             {
-                string[] employeeData = employee.Split(' ');
-                string lastName = employeeData[0];
-                string firstName = employeeData[1];
-                string middleName = employeeData[2];
+            string[] employeeData = employee.Split(' ');
+            string lastName = employeeData[0];
+            string firstName = employeeData[1];
+            string middleName = employeeData[2];
 
                 List<DateTime> vacations = GenerateVacations();
 
@@ -85,5 +86,6 @@ class Program
             int randomIndex = rand.Next(durations.Length);
             return Math.Min(remainingVacationDays, durations[randomIndex]);
         }
+        Console.ReadKey();
     }
 }

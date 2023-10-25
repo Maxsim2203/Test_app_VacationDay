@@ -3,7 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34202.233
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VacationDay", "VacationDay\VacationDay.csproj", "{BA4B1CD1-F212-45AB-B1E4-72B847F62000}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VacationDay", "VacationDay\VacationDay.csproj", "{BA4B1CD1-F212-45AB-B1E4-72B847F62000}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1AB3EEED-F00F-4479-BACA-1D192B3C16D9}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

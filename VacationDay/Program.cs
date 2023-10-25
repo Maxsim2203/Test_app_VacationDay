@@ -27,7 +27,6 @@ class Program
             string middleName = employeeData[2];
 
                 List<DateTime> vacations = GenerateVacations();
-
                 Console.WriteLine("Сотрудник: " + lastName + " " + firstName + " " + middleName);
                 Console.WriteLine("Отпускные даты:");
                 foreach (DateTime date in vacations)

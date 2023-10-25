@@ -20,7 +20,7 @@ class Program
             };
             foreach (var employee in VacationDictionary)
             {
-                string[] employeeData = employee.Split('');
+                string[] employeeData = employee[''];
                 string lastName = employeeData[0];
                 string firstName = employeeData[1];
                 string middleName = employeeData[2];

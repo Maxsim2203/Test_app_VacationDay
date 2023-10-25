@@ -7,7 +7,7 @@ class Program
 {
     static void Main()
     {
-
+        // Составляем список сотрудников
         {
             var VacationDictionary = new Dictionary<string, List<DateTime>>()
             {
@@ -18,6 +18,7 @@ class Program
                 ["Павлов Павел Павлович"] = new List<DateTime>(),
                 ["Георгиев Георг Георгиевич"] = new List<DateTime>()
             };
+           
             //List<DateTime> list = new List<DateTime>(); 
             foreach (var employee in VacationDictionary)
             {
@@ -25,7 +26,7 @@ class Program
             string lastName = employeeData[0];
             string firstName = employeeData[1];
             string middleName = employeeData[2];
-
+                //Список отпусков сотрудников
                 List<DateTime> vacations = GenerateVacations();
                 Console.WriteLine("Сотрудник: " + lastName + " " + firstName + " " + middleName);
                 Console.WriteLine("Отпускные даты:");

@@ -18,18 +18,21 @@ class Program
                 ["Павлов Павел Павлович"] = new List<DateTime>(),
                 ["Георгиев Георг Георгиевич"] = new List<DateTime>()
             };
-           
+
             //List<DateTime> list = new List<DateTime>(); 
             foreach (var employee in VacationDictionary)
             {
-            string[] employeeData = employee.Split(' ');
-            string lastName = employeeData[0];
-            string firstName = employeeData[1];
-            string middleName = employeeData[2];
-                //Список отпусков сотрудников
+                string employeeData = employee.Key;
+                string[] employeeDetails = employeeData.Split(' ');
+                string lastName = employeeDetails[0];
+                string firstName = employeeDetails[1];
+                string middleName = employeeDetails[2];
+
                 List<DateTime> vacations = GenerateVacations();
+
                 Console.WriteLine("Сотрудник: " + lastName + " " + firstName + " " + middleName);
                 Console.WriteLine("Отпускные даты:");
+
                 foreach (DateTime date in vacations)
                 {
                     Console.WriteLine(date.ToString("dd.MM.yyyy"));

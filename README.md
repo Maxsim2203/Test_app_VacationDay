@@ -1,1 +1,1 @@
-Тестовое задание junior develop Рабочие дни 
+Тестовое задание junior developer Рабочие дни 
